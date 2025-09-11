@@ -1,0 +1,76 @@
+\documentclass[12pt, a4paper]{letter} % Set the font size (10pt, 11pt and 12pt) and paper size 
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{eso-pic}
+\usepackage{lipsum}
+\usepackage[export]{adjustbox}
+%\usepackage{tikz} 
+\usepackage[spanish]{babel}
+\usepackage{xcolor}
+\usepackage{transparent}
+\usepackage{tabularray}
+\definecolor{umdred}{RGB}{207, 20, 47}
+
+\geometry{
+	top=1cm,
+	bottom=2cm,
+	left=2cm,
+	right=2cm,
+}
+
+\newcommand\BackgroundPicture{
+   \put(0,0){
+     \parbox[b][\paperheight]{\paperwidth}{
+       \vfill
+       \centering
+        \transparent{0.15}\includegraphics[width=0.5\paperwidth,height=0.5\paperheight,keepaspectratio]{Logos/LOGO UES.png}
+       \vfill
+     }}}
+\AddToShipoutPicture{\BackgroundPicture}
+
+\begin{document}
+
+\begin{minipage}{0.6\textwidth}
+\includegraphics[height=1in]{Logos/ues-logo.png}
+\end{minipage}
+\hfill
+\begin{minipage}{0.4\textwidth}\raggedright
+\small{\textbf{\color{umdred}Responsable:}\hphantom{A}Nombre Completo\\
+\textbf{\color{umdred}Local:}\hphantom{A}EP-105, Edificio de la Biblioteca FIA -- UES\\
+\hphantom{AA}Facultad de Ingeniería y\\
+\hphantom{AA}Arquitectura\\
+\hphantom{AA}Universidad de El Salvador\\
+\hphantom{AA}San Salvador\\
+\hphantom{AA}El Salvador\\
+\textbf{\color{umdred}Tel: } xxx-xxx\\
+\textbf{\color{umdred}Email: }xxx@ues.edu.sv }
+\end{minipage}
+
+\today
+
+Junta Directiva\\
+Asociación de Estudiantes de Ingeniería de Sistemas Informáticos (ASEISI)\\
+Universidad de El Salvador\\
+San Salvador, El Salvador\\
+
+\textbf{Asunto:} Poner asunto aquí\\
+
+Estimados integrantes de la Junta Directiva:
+
+\lipsum[1]
+
+\lipsum[2]
+
+
+
+Atentamente,
+
+%\includegraphics[width=2.1in]{signature}
+\vspace{1.3cm}
+
+Nombre Completo,\\
+Cargo en la ASO,\\
+Estudiantes de Ingeniería de Sistemas Informáticos,\\
+Facultad de Ingeniería y Arquitectura,\\
+Universidad de El Salvador
+\end{document}

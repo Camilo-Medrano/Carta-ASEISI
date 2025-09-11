@@ -1,0 +1,110 @@
+\documentclass[12pt, a4paper]{letter} % Set the font size (10pt, 11pt and 12pt) and paper size 
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{eso-pic}
+\usepackage{lipsum}
+\usepackage[export]{adjustbox}
+%\usepackage{tikz} 
+\usepackage[spanish]{babel}
+\usepackage{xcolor}
+\usepackage{transparent}
+\usepackage{tabularray}
+\definecolor{umdred}{RGB}{207, 20, 47}
+
+\geometry{
+	top=1cm,
+	bottom=2cm,
+	left=2cm,
+	right=2cm,
+}
+
+\newcommand\BackgroundPicture{
+   \put(0,0){
+     \parbox[b][\paperheight]{\paperwidth}{
+       \vfill
+       \centering
+        \transparent{0.15}\includegraphics[width=0.5\paperwidth,height=0.5\paperheight,keepaspectratio]{Logos/LOGO UES.png}
+       \vfill
+     }}}
+\AddToShipoutPicture{\BackgroundPicture}
+
+\begin{document}
+
+\begin{minipage}{0.6\textwidth}
+\includegraphics[height=1in]{Logos/ues-logo.png}
+\end{minipage}
+\hfill
+\begin{minipage}{0.4\textwidth}\raggedright
+\small{\textbf{\color{umdred}Responsable:}\hphantom{A}Camilo Medrano\\
+\textbf{\color{umdred}Local:}\hphantom{A}EP 1-05, Edificio de la Biblioteca FIA -- UES\\
+\hphantom{AA}Facultad de Ingeniería y\\
+\hphantom{AA}Arquitectura\\
+\hphantom{AA}Universidad de El Salvador\\
+\hphantom{AA}San Salvador\\
+\hphantom{AA}El Salvador\\
+\textbf{\color{umdred}Tel: } 7848--0774\\
+\textbf{\color{umdred}Email: }mm22108@ues.edu.sv }
+\end{minipage}
+
+\today
+
+Ing. Luis Barrera\\
+Decano de la Facultad de Ingeniería y Arquitectura\\
+Universidad de El Salvador\\
+San Salvador, El Salvador\\
+
+\textbf{Asunto:} Mobiliario a trasladar del edificio de Mecánica.
+
+Estimado señor decano:
+
+Por medio de la presente, se adjunta el listado de los muebles que serán trasladados al local de la ASEISI, quedamos pendiente de su aprobación para proceder con el traslado.
+
+\begin{longtblr}[
+  label = none,
+  entry = none,
+]{
+  width = \linewidth,
+  colspec = {Q[125]Q[210]Q[604]},
+  hlines = {1pt},
+  vlines = {0.6pt},
+  %caption = {Listado de muebles sin inventario}
+}
+\textbf{Cantidad} & \textbf{Descripción} & \textbf{Características}                        \\
+1                 & Estante de metal     & Color negro, 6 entrepaños                       \\
+1                 & Mesa                 & Patas de metal y tablero de madera              \\
+1                 & Mesa plegable        & Color blanco, acrílica, tipo maleta             \\
+1                 & Silla plegable       & Color blanco, acrílica                          \\
+12                & Bancos plásticos     & Multicolor                                      \\
+1                 & Silla                & Color azul, con ruedas                          \\
+1                 & Silla                & Color negro, con colchón, rotuladas POSTGRADO - FIA \\
+1                 & Silla                & Color negro con colchón                         
+\end{longtblr}
+
+
+\begin{longtblr}[
+  label = none,
+  entry = none,
+]{
+  width = \linewidth,
+  colspec = {Q[163]Q[208]Q[283]Q[275]},
+  hlines = {1pt},
+  vlines = {0.6pt},
+  %caption = {Listado de muebles con número de inventario}
+}
+\textbf{Cantidad} & \textbf{Descripción} & \textbf{Inventario} & \textbf{Correlativos} \\
+1                 & Escritorio           & 12060--2601--085    & 0002                  \\
+3                 & Sillas negras        & 12060--2601--196    & 0116, 0134, 0132      
+\end{longtblr}
+
+Agradecemos de antemano su apoyo y colaboración en este proceso.
+
+Atentamente,
+
+%\includegraphics[width=2.1in]{signature}
+\vspace{1cm}
+
+Kevin García \hfill Camilo Medrano \hfill Daniel Medrano\\
+Miembros activos de la ASEISI,\\
+Estudiantes de Ingeniería de Sistemas Informáticos,\\
+Facultad de Ingeniería y Arquitectura, Universidad de El Salvador.
+\end{document}

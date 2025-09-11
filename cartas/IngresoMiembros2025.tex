@@ -1,0 +1,196 @@
+\documentclass[12pt, a4paper]{letter} % Set the font size (10pt, 11pt and 12pt) and paper size 
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{eso-pic}
+\usepackage{lipsum}
+\usepackage[export]{adjustbox}
+%\usepackage{tikz} 
+\usepackage[spanish]{babel}
+\usepackage{xcolor}
+\usepackage{transparent}
+\usepackage{tabularray}
+\definecolor{umdred}{RGB}{207, 20, 47}
+
+\usepackage{caption}
+\usepackage{longtable}
+
+\UseTblrLibrary{booktabs} % opcional, si usas estilo booktabs
+
+% Redefinir los textos de continuación de longtable/tabularray
+\DefTblrTemplate{contfoot-text}{default}{\textit{Continúa en la siguiente página}}
+\DefTblrTemplate{conthead-text}{default}{\textit{(Continuación)}}
+
+\geometry{
+	top=1cm,
+	bottom=2cm,
+	left=2cm,
+	right=2cm,
+}
+
+\newcommand\BackgroundPicture{
+   \put(0,0){
+     \parbox[b][\paperheight]{\paperwidth}{
+       \vfill
+       \centering
+        \transparent{0.15}\includegraphics[width=0.5\paperwidth,height=0.5\paperheight,keepaspectratio]{../Logos/LOGO UES.png}
+       \vfill
+     }}}
+\AddToShipoutPicture{\BackgroundPicture}
+
+\begin{document}
+
+\begin{minipage}{0.6\textwidth}
+\includegraphics[height=1in]{../Logos/ues-logo.png}
+\end{minipage}
+\hfill
+%\begin{minipage}{0.4\textwidth}\raggedright
+%\small{\textbf{\color{umdred}Referencia:}\hphantom{A}Nombre Completo\\
+%\textbf{\color{umdred}Local:}\hphantom{A}EP-105, Edificio de la Biblioteca FIA -- UES\\
+%\hphantom{AA}Facultad de Ingeniería y\\
+%\hphantom{AA}Arquitectura\\
+%\hphantom{AA}Universidad de El Salvador\\
+%\hphantom{AA}San Salvador\\
+%\hphantom{AA}El Salvador\\
+%\textbf{\color{umdred}Tel: } xxx-xxx\\
+%\textbf{\color{umdred}Email: }xxx@ues.edu.sv }
+%\end{minipage}
+\vspace{2cm}
+\today
+
+Junta Directiva\\
+Asociación de Estudiantes de Ingeniería de Sistemas Informáticos (ASEISI)\\
+Universidad de El Salvador\\
+San Salvador, El Salvador\\
+
+\textbf{Asunto}: Solicitud formal de ingreso y registro como miembros\\
+
+Estimados integrantes de la Junta Directiva:
+
+Por medio de esta carta, presentamos formalmente nuestra solicitud de ingreso como miembros de la ASEISI y nuestro debido registro en el Libro de Miembros de la Asociación.
+
+Conscientes de la misión y visión de esta asociación, nos comprometemos a aportar nuestras capacidades, tiempo y esfuerzo para contribuir al cumplimiento de sus objetivos y al fortalecimiento de sus actividades. Entendemos y aceptamos plenamente los deberes y responsabilidades que conlleva ser parte de la Asociación, y nos comprometemos a cumplir fielmente con sus estatutos y reglamentos internos.
+
+Reconocemos que la participación de algunos de nosotros en el grupo de WhatsApp no constituye un registro formal. Por ello, con el fin de asegurar que nuestro proceso de inscripción se realice de manera adecuada y conforme a lo estipulado en los estatutos, presentamos esta solicitud por escrito.
+
+Quedamos a su disposición para proporcionar cualquier información o dato adicional que sea necesario para completar nuestro registro. Agradecemos de antemano la atención a nuestra solicitud y esperamos una resolución favorable.
+
+\vspace{0.5cm} % Add a little space for the enclosure notice
+\encl{Anexo: Listado de solicitantes}
+
+
+Atentamente,
+
+%\includegraphics[width=2.1in]{signature}
+%\vspace{1.3cm}
+
+%Nombre Completo,\\
+%Cargo en la ASO,\\
+Estudiantes de Ingeniería de Sistemas Informáticos,\\
+Facultad de Ingeniería y Arquitectura,\\
+Universidad de El Salvador.\newpage
+
+\vspace{0.5cm}
+
+\begin{center}
+\Large\textbf{Anexo: Listado de solicitantes}
+\end{center}
+
+\vspace{0.5cm}
+
+%\begin{table}
+%\centering
+\begin{longtblr}[
+  label = none,
+  entry = none,
+]{
+  width = \linewidth,
+  colspec = {Q[137]Q[298]Q[283]Q[208]},
+  hlines,
+  vlines,
+  rowhead = 1,
+  rowsep = 6pt,
+}
+\textbf{Carnet} & \textbf{Nombres}   & \textbf{Apellidos}    & \textbf{Firma} \\
+MM22108          & Camilo Samuel      & Medrano Martínez      &                \\
+GR19079          & Kevin Enrique      & García Reyes          &                \\
+MM21030          & Daniel Andrés      & Medrano Martínez      &                \\
+GG19083          & Daniel Alexis      & García Gómez          &                \\
+GD21011          & José Adonay        & Gutierrez Domingez    &                \\
+OT18005          & Josué David        & Ortiz Tejada          &                \\
+ML19017          & Cristian Alberto   & Mejía Leiva           &                \\
+SM21008          & Alejandro Antonio  & Sandoval Montoya      &                \\
+CV19008          & Jorge Daniel       & Cruz Vásquez          &                \\
+AO22002          & Emerson Balmore    & Arévalo Orellana      &                \\
+RC22011          & Carlos Daniel      & Rauda Contreras       &                \\
+AR19063          & Javier Alexander    & Alfaro Romero         &                \\
+BH22010          & Rodrigo Alejandro  & Benítez Hernández     &                \\
+LL22002          & Kevin Alexis       & Landaverde Landaverde &                \\
+SP21013          & Karen Stefany      & Sánchez Pocasangre    &                \\
+PG22010          & Rodrigo Ernesto    & Parada Garciaguirre   &                \\
+GH22026          & Heber Antonio      & Guarita Hernández     &                \\
+
+LQ21001          & Jorge Alfredo      & Llanes Quintanilla    &                \\
+ES21001          & Carlos Antonio     & Escobar Sarmiento     &                \\
+RC18087          & Tomás Eduardo      & Romero Cañas          &                \\
+AP20025          & Allan Augusto      & Anduray Portillo      &                \\
+RF20010          & Josias Abner       & Rivas Fuentes         &                \\
+PH22012          & Valentín Adelberto & Pérez Hernández       &                \\
+MR19082          & Michael Brando     & Melendez Romero       &                \\
+DP19004          & Santiago Tadeo     & Del Pinal Chavez      &                \\
+RC22009          & Héctor Gerardo     & Rodríguez Chamagua    &                \\
+GD21001          & Jaime Ernesto      & Gil Díaz              &                \\
+HB21009          & Roman Mauricio     & Hernández Beltrán     &                \\
+RN22001          & Otoniel Eleazar    & Rivas Nájera          &                \\
+SL18003          & Cristian David     & Serrano López         &                \\
+MG22098          & Elias Isaac        & Manzano García        &                \\
+CM21091          & Jairo Stanley      & Cuéllar Mejía         &                \\
+CM21092          & Kevin Eduardo      & Cuéllar Mejía         &                \\
+HS21021          & Fredy Orlando      & Hernández Salguero    &                \\
+SS23018          & Rodrigo Edgardo    & Santos Santos         &                \\
+PM21005 & Bryan Samuel  & Pérez Majano                       &                \\
+GA21090 & Erick Gabriel & Girón Alvarenga & \\
+TF21003 & David Enrique & Tobar Flores & \\
+DV21005 & Bryan Alexander & Díaz Vásquez & \\
+RA20073 & José Eduardo & Ramos Alvarado & \\
+GC21025 & Esther Eunice &  Guillén Cárcamo & \\
+HV21011 & Cristian Aldair & Hernández Vanegas & \\
+PR21064 & Christian Armando & Pleitez Rosales & \\
+LL22030 & Kenia Yamileth & Landaverde Linares & \\
+AF23008 & José Eduardo & Artiga Franco & \\
+HG23008 & Sergio David & Hernández García & \\
+GC23032 & Marcos Yahir & Gallardo Cubas & \\
+GM23025 & Karla Gissell & Girón Martínez & \\
+AS22027 & Yajaira Nicole & Argueta Sibrian & \\
+SB23003 & Ricardo David & Salinas Barrientos & \\
+GD23016 & Jonathan Josué & Gómez Díaz & \\
+GD23017 & Crhistian Alexander & Gómez Díaz & \\
+MQ21004 & Francisco Javier & Martínez Quinteros & \\
+MM20053 & Diego Anthony & Meléndez Mayén & \\
+OP20001          & Kenet Arnulfo      & Ortiz Pineda          &                \\
+AR21077          & Nataly Melissa     & Ayala Rivas           &                \\
+AA20099 & Carlos Josue & Argueta Alvarado & \\
+HM21079 & Hazel Lizbeth & Hernández Martínez & \\
+PC22007 & Wendy Esmeralda & Pérez Cruz & \\
+RH23022 & Josué Nehemías & Renderos Hernández & \\
+AA21022 & Daniel Antonio & Avelar Aguirre & \\
+HH19013 & Jonathan Caleb & Hernández Hernández & \\
+HV22023 & Josselyn del Carmen & Hernández Vásquez & \\
+PL22022 & José Manuel & Pérez León & \\
+JO20004 & Gerson Alexander & Juárez Ortiz & \\
+LR21008 & Eduardo Enrique & López Rodríguez & \\
+AC21011 & Oscar Mauricio & Ángel Cordova & \\
+GL17009 & David Armando & Gamez Laínez & \\
+MD22007 & Nery Antonio & Mejía Durán & \\
+CI22001 & Oscar David & Cruz Iraheta & \\
+RL25004 & Gerardo Steven & Ramírez Lara & \\
+CV23017 & Darlin Nohemy & Castro Vásquez & \\
+HE24006 & David Sebastián & Hernández Elías & \\
+GA18097 & Patrick Rodrigo & Guardado Aguilar & \\
+\end{longtblr}
+%\end{table}
+
+
+
+
+\end{document}
+

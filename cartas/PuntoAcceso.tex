@@ -1,0 +1,76 @@
+\documentclass[12pt, a4paper]{letter} % Set the font size (10pt, 11pt and 12pt) and paper size 
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{eso-pic}
+\usepackage{lipsum}
+\usepackage[export]{adjustbox}
+%\usepackage{tikz} 
+\usepackage[spanish]{babel}
+\usepackage{xcolor}
+\usepackage{transparent}
+\usepackage{tabularray}
+\definecolor{umdred}{RGB}{207, 20, 47}
+
+\geometry{
+	top=1cm,
+	bottom=2cm,
+	left=2cm,
+	right=2cm,
+}
+
+\newcommand\BackgroundPicture{
+   \put(0,0){
+     \parbox[b][\paperheight]{\paperwidth}{
+       \vfill
+       \centering
+        \transparent{0.15}\includegraphics[width=0.5\paperwidth,height=0.5\paperheight,keepaspectratio]{Logos/LOGO UES.png}
+       \vfill
+     }}}
+\AddToShipoutPicture{\BackgroundPicture}
+
+\begin{document}
+
+\begin{minipage}{0.6\textwidth}
+\includegraphics[height=1in]{Logos/ues-logo.png}
+\end{minipage}
+\hfill
+\begin{minipage}{0.4\textwidth}\raggedright
+\small{\textbf{\color{umdred}Responsable:}\hphantom{A}Camilo Samuel Medrano Martínez\\
+\textbf{\color{umdred}Local:}\hphantom{A}EP-105, Edificio de la Biblioteca FIA -- UES\\
+\hphantom{AA}Facultad de Ingeniería y\\
+\hphantom{AA}Arquitectura\\
+\hphantom{AA}Universidad de El Salvador\\
+\hphantom{AA}San Salvador\\
+\hphantom{AA}El Salvador\\
+\textbf{\color{umdred}Tel: } 7848--0774\\
+\textbf{\color{umdred}Email: }mm22108@ues.edu.sv }
+\end{minipage}
+
+\today
+
+Ing. Luis Barrera\\
+Decano de la Facultad de Ingeniería y Arquitectura\\
+Universidad de El Salvador\\
+San Salvador, El Salvador\\
+
+\textbf{Asunto:} Solicitud de habilitación de punto de red\\
+
+Por medio de la presente, nosotros, en calidad de miembros activos de la Asociación de Estudiantes de Ingeniería de Sistemas Informáticos (ASEISI), solicitamos de manera formal la autorización para la instalación y habilitación de un punto de red en el local de la ASEISI, ubicado en el EP 1-05, con el fin de garantizar la adecuada conexión y funcionamiento de los equipos que se utilizan en dicho espacio.
+
+Aprovechamos para realizar esta petición considerando que, en el local contiguo, actualmente se está instalando un laboratorio, lo cual facilitaría la gestión técnica y logística para habilitar la red en nuestro espacio.
+
+Agradecemos de antemano la atención a esta solicitud y quedamos en espera de su confirmación, así como de cualquier requisito adicional que deba cumplirse para la ejecución del mismo.
+
+Sin otro particular, nos despedimos cordialmente.
+
+Atentamente,
+
+%\includegraphics[width=2.1in]{signature}
+\vspace{1.3cm}
+
+Kevin García \hfill Camilo Medrano \hfill Daniel Medrano\\
+Miembros activos de la ASEISI,\\
+Estudiantes de Ingeniería de Sistemas Informáticos,\\
+Facultad de Ingeniería y Arquitectura,\\
+Universidad de El Salvador
+\end{document}

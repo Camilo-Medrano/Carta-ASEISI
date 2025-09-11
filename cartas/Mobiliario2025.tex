@@ -1,0 +1,86 @@
+\documentclass[12pt, a4paper]{letter} % Set the font size (10pt, 11pt and 12pt) and paper size 
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{eso-pic}
+\usepackage{lipsum}
+\usepackage[export]{adjustbox}
+%\usepackage{tikz} 
+\usepackage[spanish]{babel}
+\usepackage{xcolor}
+\usepackage{transparent}
+\usepackage{tabularray}
+\definecolor{umdred}{RGB}{207, 20, 47}
+
+\geometry{
+	top=1cm,
+	bottom=2cm,
+	left=2cm,
+	right=2cm,
+}
+
+\newcommand\BackgroundPicture{
+   \put(0,0){
+     \parbox[b][\paperheight]{\paperwidth}{
+       \vfill
+       \centering
+        \transparent{0.15}\includegraphics[width=0.5\paperwidth,height=0.5\paperheight,keepaspectratio]{Logos/minerva2.png}
+       \vfill
+     }}}
+\AddToShipoutPicture{\BackgroundPicture}
+
+\begin{document}
+
+\begin{minipage}{0.6\textwidth}
+\includegraphics[height=1in]{Logos/ues-logo.png}
+\end{minipage}
+\hfill
+\begin{minipage}{0.4\textwidth}\raggedright
+\small{\textbf{\color{umdred}Responsable:}\hphantom{A}Kevin Enrique García Reyes\\
+\textbf{\color{umdred}Local:}\hphantom{A}EP 1-05, Edificio de la Biblioteca FIA -- UES\\
+\hphantom{AA}Facultad de Ingeniería y\\
+\hphantom{AA}Arquitectura\\
+\hphantom{AA}Universidad de El Salvador\\
+\hphantom{AA}San Salvador\\
+\hphantom{AA}El Salvador\\
+\textbf{\color{umdred}Teléfono: } 6009-7634\\
+\textbf{\color{umdred}Correo: }gr19079@ues.edu.sv }
+\end{minipage}
+
+\today
+
+Ing. Luis Barrera\\
+Decano de la Facultad de Ingeniería y Arquitectura\\
+Universidad de El Salvador\\
+San Salvador, El Salvador\\
+
+Estimado señor decano:
+
+Nosotros, miembros activos de la \textbf{Asociación de Estudiantes de Ingeniería de Sistemas Informáticos (ASEISI)}, nos dirigimos a usted de manera respetuosa para solicitar su aprobación en relación al mobiliario que pertenece al local de nuestra asociación.
+
+Actualmente, dichos muebles se encuentran dispersos en distintos espacios de la Facultad, situación que dificulta tanto su adecuado resguardo como el uso óptimo de las instalaciones asignadas a ASEISI. Consideramos importante repatriarlos al local de la asociación, a fin de preservar el patrimonio estudiantil y facilitar su utilización en las actividades diarias de nuestra asociación.
+
+Cabe destacar que, además, somos los únicos miembros activos que damos uso y brindamos mantenimiento al local de la asociación, ya que los demás miembros activos pertenecen a la modalidad en línea y no hacen uso presencial de las instalaciones.
+
+Somos conscientes de que la actual Junta Directiva de ASEISI mantiene vencido su período de gestión por más de un año, y aunque se ha solicitado que inicien el proceso para la elección de una nueva directiva, este aún no cuenta con una fecha confirmada de realización. En la práctica, los pocos integrantes que permanecen en la directiva lo hacen de manera poco comprometida y confusa que únicamente prolongan el vacío de representación efectiva en nuestra asociación.
+
+De igual manera, informamos que ya nos acercamos a verificar el estado y ubicación actual de los muebles; sin embargo, se nos indicó que no podemos trasladarlos a menos que esté presente el presidente de la asociación. Esta situación nos regresa al mismo problema: actualmente no existe una Junta Directiva legalmente vigente que pueda dar ese aval, lo que impide una solución práctica y mantiene en abandono los bienes de ASEISI.
+
+En este contexto, y en calidad de miembros activos que mantenemos vivo el funcionamiento del local de ASEISI, solicitamos que se nos autorice proceder con la reubicación de los muebles al local correspondiente, en tanto se normaliza la situación organizativa y se elige una nueva Junta Directiva que asuma con responsabilidad el cargo.
+
+Agradecemos de antemano la atención prestada a esta solicitud y quedamos atentos a cualquier lineamiento que usted considere pertinente establecer para llevar a cabo este proceso de manera ordenada y transparente.
+
+Sin otro particular, nos suscribimos de usted con nuestra más alta consideración y respeto.
+
+
+
+Atentamente,
+
+%\includegraphics[width=2.1in]{signature}
+\vspace{1.3cm}
+
+Kevin García \hfill Camilo Medrano \hfill Daniel Medrano\\
+Miembros Activos de la ASEISI,\\
+Estudiantes de Ingeniería de Sistemas Informáticos,\\
+Facultad de Ingeniería y Arquitectura,\\
+Universidad de El Salvador.
+\end{document}
